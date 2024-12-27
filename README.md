@@ -15,7 +15,7 @@
 
 
 
-## やったことメモ
+## 12/26(木)
 [pnpm だけ使うようにする](https://pnpm.io/ja/only-allow-pnpm)
 package.json
 
@@ -38,3 +38,8 @@ scssを使いたかったので追加
 ```sh
 pnpm add sass -D
 ```
+
+
+## 12/27(金)
+SCで検索フォームを作る
+https://www.ai-shift.co.jp/techblog/3766

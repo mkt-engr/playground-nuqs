@@ -1,6 +1,6 @@
 import styles from "./page.module.scss";
-import { Count } from "../components/Count";
-import { NameInput } from "../components/NameInput";
+import { Count } from "../_components/Count";
+import { NameInput } from "../_components/NameInput";
 
 const Demo = () => {
   return (
