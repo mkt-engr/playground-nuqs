@@ -43,3 +43,8 @@ pnpm add sass -D
 ## 12/27(金)
 SCで検索フォームを作る
 https://www.ai-shift.co.jp/techblog/3766
+
+## 12/28（土）
+
+ダミーのAPI
+https://dummyjson.com/docs

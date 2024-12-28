@@ -1,20 +1,16 @@
 "use client";
 
 import { useQueryState } from "nuqs";
-import { Result } from "../Result";
+import { handleClick } from "./handlers";
 
 export const Search = () => {
   const [query, setQuery] = useQueryState("query", { defaultValue: "" });
 
   return (
-    <div>
-      <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
+    <form action={}>
+      <input type="text" value={query} onChange={handleClick} name="query" />
       <h1>Search Results for {query}</h1>
-      <Result query={query} />
-    </div>
+      <button type="submit">検索</button>
+    </form>
   );
 };
