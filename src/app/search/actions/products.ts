@@ -8,6 +8,7 @@ type Options = {
 };
 
 export const fetchProducts = async ({ q }: Options): Promise<ResponseData> => {
+  console.log("fetchProducts");
   const response = await fetch(
     `https://dummyjson.com/products/search?q=${q}&limit=5`,
     { cache: "no-store" }

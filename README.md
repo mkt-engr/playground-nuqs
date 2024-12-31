@@ -48,3 +48,10 @@ https://www.ai-shift.co.jp/techblog/3766
 
 ダミーのAPI
 https://dummyjson.com/docs
+
+
+## 12/31（火）
+Next.jsのエラーバウンダリーについて
+
+https://nextjs.org/docs/app/api-reference/file-conventions/error
+
