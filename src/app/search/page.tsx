@@ -11,7 +11,7 @@ type Props = {
 /** 検索フォームと検索結果を表示するコンポーネント */
 export default async function Page({ searchParams }: Props) {
   const { q } = await searchParamsCache.parse(searchParams);
-  const { products } = await fetchProducts(q);
+  const { products } = await fetchProducts({ q });
 
   if (products.length === 0) {
     return (
