@@ -28,7 +28,7 @@ export const Search = () => {
         name="q"
         ref={ref}
       />
-      <button type="submit">結果</button>
+      <button type="submit">検索する</button>
       <h1>&quot;{query}&quot;の検索結果</h1>
     </form>
   );
