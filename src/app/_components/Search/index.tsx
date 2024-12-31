@@ -1,23 +1,13 @@
 "use client";
 
 import { useQueryState } from "nuqs";
-import { FormEvent, useCallback } from "react";
 import { useFocusRef } from "./hooks/useFocusRef";
-import { useRouter } from "next/navigation";
+import { useHandleSubmit } from "./hooks/useSubmit";
 
 export const Search = () => {
   const [query, setQuery] = useQueryState("q", { defaultValue: "" });
-  const router = useRouter();
-
-  const handleSubmit = useCallback(
-    (e: FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      router.refresh();
-    },
-    [router]
-  );
-
   const ref = useFocusRef();
+  const handleSubmit = useHandleSubmit();
 
   return (
     <form onSubmit={handleSubmit}>
