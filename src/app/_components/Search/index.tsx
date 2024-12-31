@@ -28,8 +28,8 @@ export const Search = () => {
         name="q"
         ref={ref}
       />
-      <button type="submit">検索</button>
-      <h1>Search Results for {query}</h1>
+      <button type="submit">結果</button>
+      <h1>&quot;{query}&quot;の検索結果</h1>
     </form>
   );
 };
