@@ -4,9 +4,11 @@ import { type SearchParams } from "nuqs/server";
 import { fetchProducts } from "./actions/products";
 
 type Props = {
+  /** 検索クエリを含む検索パラメータ */
   searchParams: Promise<SearchParams>;
 };
 
+/** 検索フォームと検索結果を表示するコンポーネント */
 export default async function Page({ searchParams }: Props) {
   const { q } = await searchParamsCache.parse(searchParams);
   const { products } = await fetchProducts(q);

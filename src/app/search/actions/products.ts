@@ -2,7 +2,12 @@
 
 import { ResponseData, responseDataSchema } from "@/app/_types/product";
 
-export const fetchProducts = async (q: string): Promise<ResponseData> => {
+type Options = {
+  /** 検索クエリ */
+  q: string;
+};
+
+export const fetchProducts = async ({ q }: Options): Promise<ResponseData> => {
   const response = await fetch(
     `https://dummyjson.com/products/search?q=${q}&limit=5`,
     { cache: "no-store" }
