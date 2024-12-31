@@ -1,10 +1,16 @@
-import { JSX } from "react";
+import { Product } from "@/app/_types/product";
+import { FC, JSX } from "react";
 
 type Props = {
-  query: string;
+  products: Product[];
 };
 
-export const Result = ({ query }: Props): JSX.Element => {
-  console.log(`Result: ${query}`);
-  return <div>{query}</div>;
-};
+export const Result: FC<Props> = ({ products }) =>
+  products.map((product) => {
+    return (
+      <div key={product.id}>
+        <h2>title:{product.title}</h2>
+        <p>price:{product.price}</p>
+      </div>
+    );
+  });

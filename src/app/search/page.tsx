@@ -2,6 +2,7 @@ import { Search } from "../_components/Search";
 import { searchParamsCache } from "./_searchParams";
 import { type SearchParams } from "nuqs/server";
 import { fetchProducts } from "./actions/products";
+import { Result } from "../_components/Result";
 
 type Props = {
   /** 検索クエリを含む検索パラメータ */
@@ -27,14 +28,7 @@ export default async function Page({ searchParams }: Props) {
     <div>
       <Search />
       <hr />
-      {products.map((product) => {
-        return (
-          <div key={product.id}>
-            <h2>title:{product.title}</h2>
-            <p>price:{product.price}</p>
-          </div>
-        );
-      })}
+      <Result products={products} />
     </div>
   );
 }
