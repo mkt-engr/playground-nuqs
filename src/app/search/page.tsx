@@ -26,6 +26,7 @@ export default async function Page({ searchParams }: Props) {
   return (
     <div>
       <Search />
+      <h1>&quot;{q}&quot;の検索結果</h1>
       <hr />
       {products.map((product) => {
         return (
