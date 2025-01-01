@@ -2,7 +2,7 @@
 
 import { useQueryState } from "nuqs";
 import { useFocusRef } from "./hooks/useFocusRef";
-import { useHandleSubmit } from "./hooks/useSubmit";
+import { useHandleSubmit } from "./hooks/useHandleSubmit";
 
 export const Search = () => {
   const [query, setQuery] = useQueryState("q", { defaultValue: "" });
