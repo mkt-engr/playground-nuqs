@@ -1,5 +1,5 @@
 import { Product } from "@/app/_types/product";
-import { FC, JSX } from "react";
+import { FC } from "react";
 
 type Props = {
   products: Product[];
