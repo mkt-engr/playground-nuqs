@@ -5,6 +5,7 @@ type Props = {
   products: Product[];
 };
 
+/** 商品の検索結果ーを表示するコンポーネント */
 export const Result: FC<Props> = ({ products }) =>
   products.map((product) => {
     return (
